@@ -60,3 +60,8 @@ fabric.properties
 
 /.idea/
 /Chifoumie.iml
+Supprimerait .gitignore
+Supprimerait .idea/
+Supprimerait Chifoumie.iml
+Supprimerait out/
+Supprimerait src/

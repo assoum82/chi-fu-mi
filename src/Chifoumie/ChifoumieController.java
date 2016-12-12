@@ -1,5 +1,6 @@
 package Chifoumie;
 
+import Main.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -38,7 +39,7 @@ public class ChifoumieController implements Initializable {
 
 
     private int aleatoire() {
-        return (int) ((1 + ((Math.random() * 3)) + (1 + (Math.random() * 3))) / 2);
+        return (1 + (int) (Math.random() * 3));
     }
 
 
