@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chifoumie.ChifoumieController">
+   <children>
+      <Label layoutX="70.0" layoutY="212.0" text="Vous :" />
+      <Label layoutX="370.0" layoutY="212.0" text="Ordi :" />
+      <Label fx:id="scoreMe" layoutX="156.0" layoutY="212.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="scoreOrdi" layoutX="456.0" layoutY="212.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Button ellipsisString="" layoutX="70.0" layoutY="83.0" mnemonicParsing="false" onAction="#games" prefHeight="67.0" prefWidth="86.0" style="-fx-background-color: white;" text="pierre" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/pierre.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button ellipsisString="" layoutX="220.0" layoutY="83.0" mnemonicParsing="false" onAction="#games" prefHeight="67.0" prefWidth="86.0" style="-fx-background-color: white;" text="feuille" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/feuille.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button ellipsisString="" layoutX="370.0" layoutY="83.0" mnemonicParsing="false" onAction="#games" prefHeight="67.0" prefWidth="86.0" style="-fx-background-color: WHITE;" text="ciseau" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/ciseau.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="425.0" layoutY="260.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+      <Label layoutX="350.0" layoutY="30.0" text="Le gagnant :" />
+      <Label layoutX="70.0" layoutY="50.0" text="Choix ordinateur:" />
+      <Label fx:id="choisOrdi" layoutX="250.0" layoutY="50.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="win" layoutX="470.0" layoutY="30.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Button layoutX="494.0" layoutY="260.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
+      <Label layoutX="70.0" layoutY="20.0" text="Votre choix :" />
+      <Label fx:id="choisMe" layoutX="250.0" layoutY="20.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
